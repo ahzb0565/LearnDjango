@@ -1,0 +1,15 @@
+<h1>The pyunit result of {{ plan.domain }} domain on {{ plan.platform }} with {{ plan.build_img }} image. </h1>
+
+<table border = "1">
+<tr>
+<th>Case Name</th>
+<th>Result</th>
+<th>Comments</th>
+</tr>
+{% for testcase in plan.testcase_set.all %}
+    <tr>
+    <td>{{ testcase.case_name }}</tc>
+    <td>{{ testcase.result }}</td>
+    <td>{{ testcase.comments }}</td>
+    </tr>
+{% endfor %}
