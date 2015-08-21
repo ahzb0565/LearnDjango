@@ -1,0 +1,8 @@
+<p>Upload Your Result</p>
+
+<form action="{% url 'bob:upload-csv' %}" method="post">
+{% csrf_token %}
+Input Your CSV result file.
+<input type="text" name="file_path">
+<input type="submit" name="Submit">
+</form>
