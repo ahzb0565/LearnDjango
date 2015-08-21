@@ -2,6 +2,6 @@
 <p>Here is the result list:</p>
 <ul>
 {% for plan in plans %}
-      <li>{{ plan }}</li>
+      <li><a href="{% url 'bob:result' plan.id %}">{{ plan }}</a></li>
 {% endfor %}
 </ul>
