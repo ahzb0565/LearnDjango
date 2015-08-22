@@ -1,5 +1,11 @@
-<h1>The pyunit result of {{ plan.domain }} domain on {{ plan.platform }} with {{ plan.build_img }} image. </h1>
-
+<h1>The pyunit result detail page</h1>
+<h3>Configurations:</h3>
+<ul>
+    <li>HW: {{ plan.platform }}</li>
+    <li>SW: {{ plan.build_img }}</li>
+    <li>DM: {{ plan.domain }}</li>
+</ul>
+<h3>Details:</h3>
 <table border = "1">
 <tr>
 <th>Case Name</th>
