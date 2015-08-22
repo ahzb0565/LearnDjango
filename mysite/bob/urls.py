@@ -10,5 +10,5 @@ urlpatterns = [
     #result uploader
     url(r"^result-upload/$", views.result_uploader, name = 'result-upload'),
     #upload csv result file
-    url(r"upload-csv/$", views.upload_csv, name='upload-csv'),
+    #url(r"upload-csv/$", views.upload_csv, name='upload-csv'),
     ]
